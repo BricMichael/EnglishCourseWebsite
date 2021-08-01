@@ -5,8 +5,8 @@
 }
 
 body{ 
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-family: -apple-system,Helvetica,sans-serif;
+    scroll-behavior: smooth;  
 }
     
 a {
@@ -32,8 +32,13 @@ nav {
 .logoIcon {
     font-size: 26px;
     font-weight: bold;
-    color: #232553;
+    color: #2f337e;
 }
+
+.colorear {
+    color: rgb(108, 110, 206);
+}
+
 .fa-graduation-cap {
     color: #232553;
     font-size: 1.5rem;
@@ -132,6 +137,78 @@ ul > li > a:hover {
     max-height: auto;
     object-fit: cover;
     border-radius: 20px;
-    /* box-shadow: 12px 12px 15px 5px #ccc4c4; */
     box-shadow: 12px 12px 15px 5px #bdbae4;
+}
+
+/*Seccion acerca del curso*/
+
+.contentAboutCourse {
+    background-color: rgba(210, 224, 224, 0.226);
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+
+.displayInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 3px;
+    width: 320px;
+    padding: 13px 10px;
+    border: 1px solid rgb(226, 220, 220); 
+    transition: background .3s ease; 
+    background: rgb(245, 244, 237);
+}
+
+.info:hover {
+    background: rgb(238, 237, 231);
+}
+
+.iconsAbout {
+    font-size: 35px;
+    margin-bottom: 1.3rem;
+    color: #232553;
+}
+.green{ color: rgb(13, 41, 13); }
+.subTitleInfo {
+    font-weight: 200;
+    font-size: 18px;
+    color: #232553; 
+    margin-bottom: 0.7rem;
+}
+
+.parrafoInfo {
+    text-align: left;
+    font-size: 16px;
+    padding: 0px 7px;
+    margin-bottom: 1rem;
+}
+
+.aboutImg {
+    width: 40%;
+    align-self: flex-start;
+    margin-top: 7%;
+    transition: padding-right .4s ease;
+}
+
+.aboutImg > img {
+    width: 100%;
+    max-height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 2px 15px 5px #d5dcdf;
+}
+.aboutImg:hover {
+    padding-right: 0.2rem;
 }
