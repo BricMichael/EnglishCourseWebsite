@@ -56,7 +56,8 @@ ul > li > a {
     color: #232553;
     border-radius: 8px;
     font-family: sans-serif;
-    transition: background .4s ease;  
+    background: transparent;
+    transition: background .5s ease;  
     font-weight: 700;
 }
 
@@ -150,7 +151,6 @@ ul > li > a:hover {
     display: flex;
     justify-content: space-around;
     margin-bottom: 2%;
-    box-shadow: 0px 2px 7px #b3afaf;
 }
 
 .displayInfo {
@@ -321,7 +321,7 @@ ul > li > a:hover {
     margin: auto;
     padding: 6px;
     border-radius: 3px;
-    box-shadow: 0px 1px 3px 2px rgb(189 189 189 / 40%);
+    box-shadow: 0px 1px 3px 2px rgb(132 127 127 / 40%);
 }
 
 .cardsNiveles > h3 {
@@ -342,4 +342,107 @@ ul > li > a:hover {
     width: 90%;
     height: 270px;
     object-fit: cover;
+}
+
+/*Seccion testimonios*/
+
+.sectionTestimonio {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 3rem;
+}
+.CabeceraContentTestimonio {
+    width: 80%;
+    margin: auto;
+}
+.contenGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+    margin-top: 3rem;
+}
+.Testimonio {
+    background: linear-gradient(90deg, rgba(251,244,244,1) 0%, rgba(207,207,226,1) 80%, rgba(216,214,254,1) 100%);
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 8px;
+    transition: background .3s ease;
+}
+
+.Testimonio:hover {
+    background: linear-gradient(90deg, rgb(247, 239, 239) 0%, rgb(197, 197, 219) 80%, rgb(213, 210, 253) 100%);
+}
+
+.avatarEstudiante {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.2rem;
+}
+.nombreEstudiante { 
+    font-size: 23px;
+    color: #2a2e80;
+    margin-bottom: 1rem;
+}
+
+.testimonioText {
+    padding: 0px 15px;
+    line-height: 22px;
+    text-align: justify;
+    color: #000000;
+}
+
+/*Seccion contacto*/
+.sectionContacto {
+    background-color:#faf1f18f;
+    padding: 20px 20px 20px 40px;
+    color: #5c5353;
+    text-align: center;
+}
+
+.titleContacto {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 0.7rem;
+    color: #696262;
+}
+
+.CabeceraTituloContacto > p{
+   margin: auto;
+   margin-top: 1rem;
+   /* width: 68%; */
+   font-size: 17px;
+}
+.enlaces{
+    color: #5458b1;
+    font-size: 19px;
+    text-decoration: underline;
+    transition: color .4s ease;
+}
+
+.enlaces:hover{
+    color: #2c32a0; 
+}
+
+.contentSocialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resizeSocialMedia {
+    width: 28px;
+    height: 28px;
+    margin-top: 1.2rem;
+    margin-right: 16px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.resizeSocialMedia:hover  {
+    -webkit-transform: scale(1.24);
+    -moz-transform: scale(1.24);
 }
