@@ -463,6 +463,43 @@ article > p > a {
     font-size: 17px;
 }
 #unirse {
- 
     text-decoration: underline;
 }
+/* TAMAÑO TELEFONO     */
+
+@media screen and (max-width: 425px) {
+    nav > ul { display: none; }
+    .contentPresentation { justify-content: initial; }
+    .bodyPresentation { 
+        flex-direction: column;
+        margin-left: 0;
+        padding: 15px;
+        align-items: center;
+    }
+    .textPresentation, .textPresentation > p, .imagePresentation { width: 100%; text-align: justify;}
+    .textPresentation > p { line-height: 20px;  }
+
+    .textPresentation > h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+        padding-right: 10px;
+        text-align: left;
+    }
+
+    .textPresentation > h4 {
+        margin-top: 2rem;
+        margin-bottom: 2.2rem;
+    }
+    .imagePresentation { padding: 0 12px; }
+
+
+
+
+
+
+
+
+
+
+.sectionVideo,.sectionNiveles,.contentAboutCourse ,.sectionTestimonio, #comoUnirme,.contentSocialMedia, .CabeceraTituloContacto{display: none;}
+} 
