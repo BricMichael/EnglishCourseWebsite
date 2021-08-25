@@ -75,15 +75,14 @@ ul > li > a:hover {
     box-shadow: 0px 2px 7px #b3afaf;
 }
 
-.textPresentation > h4 {
+.publicidad{
     color: #232553;
     font-size: 1.2rem;
     align-self: flex-start;
     margin-top: 5rem;
-    font-weight: 200;
 }
 
-.textPresentation > h4 > a{
+.publicidad > a{
     color: #232553;
     text-decoration: underline;
 }
@@ -527,9 +526,11 @@ article > p > a {
     }
 
     .imageSectionVideo > p 
-    { font-size: 20px;
-        margin: 1rem 0 0 2rem;
+    {   font-size: 20px;
+        margin: 1rem 0 0 0.6rem;
+        text-align: left;
     }
+    
     .infoDetalles, article > p, .CabeceraTituloContacto > p{
         text-align: justify;
         font-size: 15px;
@@ -546,6 +547,10 @@ article > p > a {
         grid-template-columns: repeat(1, 1fr);
         padding: 3%;
     }
+    .cardsNiveles > iframe {
+        width: 96%;
+    }
+
     .infoDetalles { padding: 0; }
     .cabecera, article > h3,.titleContacto{
         font-size: 1.3rem;
@@ -559,6 +564,10 @@ article > p > a {
 
     .block{
         display: block;
+    }
+    .resizeSocialMedia {
+        width: 33px;
+        height: 33px;
     }
 } 
 
@@ -585,4 +594,9 @@ article > p > a {
 
     .info { width: auto; }
     .subTitleInfo { font-size: 15px; font-weight: 600; }
+    .block{
+        display: block;
+        margin-top: 8px;
+        text-align: center;
+    }
 }
