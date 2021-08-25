@@ -75,17 +75,6 @@ ul > li > a:hover {
     box-shadow: 0px 2px 7px #b3afaf;
 }
 
-.publicidad{
-    color: #232553;
-    font-size: 1.2rem;
-    align-self: flex-start;
-    margin-top: 5rem;
-}
-
-.publicidad > a{
-    color: #232553;
-    text-decoration: underline;
-}
 .Inscriptions {
     font-weight: bold;
     font-size: 1rem;
@@ -114,13 +103,23 @@ ul > li > a:hover {
 }
 
 .textPresentation > p {
-    font-family: 15px;
     width: 70%;
     margin-bottom: 0.5rem;
     text-align: justify;
     color: #1a1c5e;
 }
 
+.publicidad{
+    color: #232553;
+    font-size: 1.2rem;
+    align-self: flex-start;
+    margin-top: 5rem;
+}
+
+.publicidad > a{
+    color: #232553;
+    text-decoration: underline;
+}
 .textPresentation > small {
     font-size: 17px;
     font-weight: bolder;
@@ -163,7 +162,7 @@ ul > li > a:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 5px;
     width: 320px;
     padding: 13px 10px;
     border: 1px solid rgb(226, 220, 220); 
@@ -487,9 +486,8 @@ article > p > a {
         text-align: left;
     }
 
-    .textPresentation > h4 {
+    .publicidad {
         margin-top: 2rem;
-        margin-bottom: 0.5rem;
     }
     .imagePresentation { padding: 0 12px; }
 
@@ -506,6 +504,7 @@ article > p > a {
         font-size: 14px;
         margin-bottom: 1rem;
         color: #2f337e;
+        text-align: justify;
     }
     .columnVideo > iframe {
         margin-bottom: 0.8rem;
@@ -565,10 +564,6 @@ article > p > a {
     .block{
         display: block;
     }
-    .resizeSocialMedia {
-        width: 33px;
-        height: 33px;
-    }
 } 
 
 @media screen and (max-width: 325px) {
@@ -596,7 +591,7 @@ article > p > a {
     .subTitleInfo { font-size: 15px; font-weight: 600; }
     .block{
         display: block;
-        margin-top: 8px;
+        margin-top: 7px;
         text-align: center;
     }
 }
