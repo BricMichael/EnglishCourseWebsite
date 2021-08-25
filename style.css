@@ -469,7 +469,7 @@ article > p > a {
 }
 /* TAMAÑO TELEFONO     */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
     nav > ul { display: none; }
     .contentPresentation { justify-content: initial; height: auto;}
     .bodyPresentation { 
@@ -494,7 +494,6 @@ article > p > a {
     }
     .imagePresentation { padding: 0 12px; }
 
-
     /*about course size phone*/
 
     .displayInfo { grid-template-columns: repeat(1, 1fr); }
@@ -502,9 +501,10 @@ article > p > a {
 
      /*section video size phone*/
      .sectionVideo { margin-top: 2rem; }
-     .sectionVideo > h2 { font-size: 1.4rem; }
+     .sectionVideo > h2 { font-size: 1.3rem; }
+
     .columnVideo > p{
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 1rem;
         color: #2f337e;
     }
@@ -536,7 +536,7 @@ article > p > a {
     }
 
     /*seccion niveles y seccion contactio*/
-
+    .sectionNiveles { margin-top: 0; margin-bottom: 1rem; }
     .infoDetalles, article > p, .CabeceraTituloContacto > p{
         text-align: justify;
         font-size: 16px;
@@ -546,7 +546,7 @@ article > p > a {
         grid-template-columns: repeat(1, 1fr);
         padding: 3%;
     }
-
+    .infoDetalles { padding: 0; }
     .cabecera, article > h3,.titleContacto{
         font-size: 1.3rem;
     }
@@ -560,5 +560,29 @@ article > p > a {
     .block{
         display: block;
     }
-
 } 
+
+@media screen and (max-width: 325px) {
+
+    .columnVideo {
+        padding: 0 7%;
+    }
+    .columnVideo > iframe {
+        width: 120%;
+    }
+    .cardsNiveles > p {
+        padding: 0px 3%;
+    }
+    .sectionNiveles, .Testimonio {padding: 10px; }
+    .sectionContacto { padding: 18px; }
+
+    .nombreEstudiante {
+        font-size: 19px;
+    }
+    .testimonioText, .CabeceraTituloContacto > p, .parrafoInfo { font-size: 15px; }
+
+    .cabecera, article > h3,.titleContacto, .sectionVideo > h2, .textPresentation > h3 { font-size: 1.1rem; }
+
+    .info { width: auto; }
+    .subTitleInfo { font-size: 15px; font-weight: 600; }
+}
