@@ -519,7 +519,6 @@ article > p > a {
     #videoImgSvg { display: none; }
 
     .FatherContent {
-      
         flex-direction: column;
         align-items: flex-start;
         justify-content: initial;
@@ -531,8 +530,35 @@ article > p > a {
     { font-size: 20px;
         margin: 1rem 0 0 2rem;
     }
+    .infoDetalles, article > p, .CabeceraTituloContacto > p{
+        text-align: justify;
+        font-size: 15px;
+    }
 
+    /*seccion niveles y seccion contactio*/
 
+    .infoDetalles, article > p, .CabeceraTituloContacto > p{
+        text-align: justify;
+        font-size: 16px;
+    }
 
-.sectionNiveles,.sectionTestimonio, #comoUnirme,.contentSocialMedia, .CabeceraTituloContacto{display: none;}
+    .cardsContent{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3%;
+    }
+
+    .cabecera, article > h3,.titleContacto{
+        font-size: 1.3rem;
+    }
+    .contenGrid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    article {
+        width: 80%;
+    }
+
+    .block{
+        display: block;
+    }
+
 } 
